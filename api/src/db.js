@@ -10,7 +10,6 @@ const sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}
   native: false, 
 });
 
-
 DogsModels(sequelize);
 TemperamentsModels(sequelize);
 
