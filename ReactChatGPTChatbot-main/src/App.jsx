@@ -2,8 +2,10 @@ import { useState } from 'react'
 import './App.css'
 import '@chatscope/chat-ui-kit-styles/dist/default/styles.min.css';
 import { MainContainer, ChatContainer, MessageList, Message, MessageInput, TypingIndicator } from '@chatscope/chat-ui-kit-react';
+import Threex from "./components/Three/Threex"
+require('dotenv').config();
 
-const API_KEY = "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";
+
 // "Explain things like you would to a 10 year old learning how to code."
 const systemMessage = { //  Explain things like you're talking to a software professional with 5 years of experience.
   "role": "system", "content": "Explain things like you're talking to a software professional with 2 years of experience."
@@ -84,8 +86,9 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <div style={{ position:"relative", height: "800px", width: "700px"  }}>
+    <div>
+      <Threex/>
+      {/* <div style={{ position:"relative", height: "400px", width: "350px"  }}>
         <MainContainer>
           <ChatContainer>       
             <MessageList 
@@ -100,7 +103,7 @@ function App() {
             <MessageInput placeholder="Type message here" onSend={handleSend} />        
           </ChatContainer>
         </MainContainer>
-      </div>
+      </div> */}
     </div>
   )
 }
