@@ -1,0 +1,17 @@
+export const GET_FILMS = "GET_FILMS";
+export const NEXT_PAGE = 'NEXT_PAGE';
+export const PREV_PAGE = 'PREV_PAGE';
+export const NUMBER_PAGE = 'NUMBER_PAGE';
+export const GET_FILM_BY_ID = "GET_FILM_BY_ID";
+export const CLEAN_DETAIL = "CLEAN_DETAIL";
+export const POST_FILM = "POST_FILM";
+export const RESET = "RESET";
+export const FILTER_ACTIVITY = "FILTER_ACTIVITY";
+export const DELETE_FILM = "DELETE_FILM";
+export const PUT_ACTIVITY_BY_ID = "PUT_ACTIVITY_BY_ID";
+export const MODIFY_FILM = "MODIFY_FILM";
+export const LOGIN_SUCCESS = "LOGIN_SUCCESS";
+export const LOGIN_FAILURE = "LOGIN_FAILURE";
+export const LOGOUT = "LOGOUT";
+export const REGISTER_SUCCESS = "REGISTER_SUCCESS";
+export const REGISTER_FAILURE = "REGISTER_FAILURE";
