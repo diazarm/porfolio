@@ -7,7 +7,7 @@ const Threex = () => {
     const scene = new THREE.Scene();
 
     // Configurar una cámara
-    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.3, 100000);
     camera.position.z = 5;
 
     // Configurar un lienzo WebGL
@@ -48,13 +48,13 @@ const Threex = () => {
 
     // Limpieza: detener el bucle de animación cuando el componente se desmonte
     return () => {
-      window.removeEventListener('resize');
+     // window.removeEventListener('resize');
       // Detener cualquier otra limpieza necesaria aquí, si es necesario
     };
   }, []);
 
   return (
-    <div id="canvas-container">Three</div>
+    <div id="canvas-container">Three is Alive</div>
   );
 }
 
