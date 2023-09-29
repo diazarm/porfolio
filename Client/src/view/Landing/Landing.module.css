@@ -24,3 +24,10 @@
     height: 632px;
     background: #0E0E0E;
 }
+
+.vid {
+    height: 90vh;
+}  
+.vid video {
+  height: 100%;
+}
