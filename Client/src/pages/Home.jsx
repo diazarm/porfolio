@@ -21,7 +21,7 @@ const Home = () => {
               </h1>
 
               <h1 className="heading-name">
-                Mucho gusto, soy 
+                Hola! soy 
                 <strong className="main-name"> Marcelo Ariel Diaz</strong>
               </h1>
 
