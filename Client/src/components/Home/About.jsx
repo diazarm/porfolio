@@ -2,6 +2,8 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import LaptopImg from "../../assets/home-main.svg";
 import Tilt from "react-parallax-tilt";
+import Particle from '../Particle'
+
 import {
   AiFillGithub,
 //  AiOutlineTwitter,
@@ -13,6 +15,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 const About = () => {
     return (
         <Container fluid className="home-about-section" id="about">
+          <Particle />
           <Container>
             <Row>
               <Col md={8} className="home-about-description">

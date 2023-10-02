@@ -2,11 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "../components/Projects/ProjectCard";
 import Particle from "../components/Particle";
-import pg from "../assets/projects/pg.png";
-import project from "../assets/projects/project.jpeg";
-import lift from "../assets/projects/lift.png";
-import krypto from "../assets/projects/krypto.png";
-import kickstart from "../assets/projects/kickstart.png";
+import eCalendary from "../assets/projects/eCalendary.jpg";
+import dogs from "../assets/projects/dogs-capture.jpg";
+import rick from "../assets/projects/rick.jpg";
+import aprende from "../assets/projects/aprende.jpg";
+import country from "../assets/projects/country.png";
+import film from "../assets/projects/film.jpg";
 
 const Projects = () => {
   return (
@@ -22,62 +23,63 @@ const Projects = () => {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={lift}
+              imgPath={rick}
               isBlog={false}
-              title="Lift-Buddy"
-              description="This online ride-sharing platform boasts a responsive front-end design, complete with an admin panel built using React and Material-UI. With the integration of Google Maps API, users can easily access directions on the map. The platform allows for full CURD functionality on profiles and posts, and users can confirm or cancel a ride from a post and message each other after confirmation. Additionally, users can easily reset their password. The back-end is powered by a Node Express server and utilizes MongoDB for the database management."
-              ghLink="https://github.com/19sajib/lift-buddy"
+              title="Rick & Morty"
+              description="Mi primera incursión en React involucró la obtención de imágenes desde una API externa y la implementación de un componente de búsqueda y filtrado. Además, utilicé estados de Redux y desarrollé la funcionalidad de eliminación mediante la gestión de estados. Posteriormente, creé una base de datos para almacenar las tarjetas que se generaron, lo que permitió llevar a cabo operaciones CRUD. Además, la implementación se realizó con Postgrest."
+              ghLink="https://github.com/diazarm/RickandMorty"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={project}
+              imgPath={dogs}
               isBlog={false}
-              title="Social Media"
-              description="This platform features a responsive interface built with Reactjs and CSS, allowing users to easily manage their profiles and posts through CRUD activities. The option to follow other users and interact with their posts (like or dislike) is also available, with suggestions for new users to follow. Users can only view posts from their followed users and can only engage in chat with those they follow. The backend is powered by Nodejs and Expressjs server, while MongoDB is utilized as the database."
-              ghLink="https://github.com/19sajib/social-media"
+              title="Dogs app"
+              description="Utilizando React como framework, obtuve imágenes de una API externa e implementé un componente de búsqueda y filtrado. Además, empleé estados de Redux y diseñé la funcionalidad de eliminación mediante la gestión de estados. En una etapa posterior, establecí una base de datos para el almacenamiento de las tarjetas generadas, lo que habilitó la ejecución de operaciones CRUD. Además, el servidor utilizó Sequelize como ORM, Express para la creación de rutas y gestionó solicitudes y respuestas HTTP, todo sobre una base de datos relacional."
+              ghLink="https://github.com/diazarm/Dogs-app"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={kickstart}
+              imgPath={aprende}
               isBlog={false}
-              title="E‑Commerce Website"
-              description="This ecommerce website utilizes a REST API built with Nodejs and Expressjs, allowing for easy CRUD operations on user profiles, products and admin panel. The user interface is designed for efficient product management and includes a complete purchase process. The admin panel, accessible for CRUD on users and products, includes a chart for statistics display. Stripe API is integrated to handle customer payments. The website uses MongoDB and Firebase as the database."
-              ghLink="https://github.com/19sajib/mern-stack-ecommerce"
+              title="Aprende conmigo"
+              description="Trabajo colaborativo, en solucion a la problematica real de busqueda de profesores por área escolar, superior o universitaria, incluye chat creado en base de datos, login, dashboard de administradores, creacion y suspension de publicaciones, sistema de reseña y puntuaciion. Tambien pasarela de pagos para abonas los cursos."
+              ghLink="https://github.com/JorgeAlfredoLozano/Aprende-Conmigo"
+              demoLink="https://aprende-one.vercel.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={pg}
+              imgPath={eCalendary}
               isBlog={false}
-              title="Blog Website"
-              description="This blogging application features a RESTful API server built with Nodejs and Expressjs. The data is retrieved from the API server and displayed on a user-friendly interface designed using React, Redux, and styled-components for a seamless experience."
-              ghLink="https://github.com/19sajib/mern-blog-app"
+              title="eCalendary"
+              description="Proyecto de calendario electronico donde el usuario genera mediante sus necesidades y disponibilidad una agenda, y envia a sus clientes mediante un link, el cual reserva un espacio de tiempo seleccionable y administrable. Dejo el link de Github donde se puede observar las tecnologias utilizadas."
+              ghLink="https://github.com/diazarm/eCalendary"
+              demoLink="https://youtu.be/g15TsSHgii0"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={krypto}
+              imgPath={country}
               isBlog={false}
-              title="Project Krypto"
-              description="Project Krypto is a Web 3 project that utilizes an Ethereum smart contract created using Solidity. It allows users to interact with their Metamask wallet and send Ethereum."
-              ghLink="https://github.com/19sajib/Project-Krypto-Web-3.0"
-              demoLink="https://project-krypto.netlify.app/"
+              title="Countries"
+              description="Proyecto del bootcamp, donde se genera una base de datos con un json, no se consume una Api externa. Al iniciar la aplicacion, se cargan los paises, se genera un paginado. se pueden generar actividades propias de un pais o varios, y luego filtrarlas por densidead de poblacion, continentes o por nombre. Dejo el enlace de github con capturas de pantalla."
+              ghLink="https://github.com/diazarm/Pi-countries"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={kickstart}
+              imgPath={film}
               isBlog={false}
-              title="Solidity Kickstart"
-              description="Solidity Kickstart is a Web 3 project that utilizes an Ethereum smart contract created using Solidity. It includes all the functionality of a kickstart platform, enabling users to interact with their Metamask wallet, transfer Ethereum and participate in kickstart campaigns."
-              ghLink="https://github.com/19sajib/Solidity-Kickstart"
+              title="Film management"
+              description="Proyecto que consume una Api externa de peliculas, pero aqui el desafio principal fue la implementacion de la autenticacion de forma manual (No auth0), utilizando base de datos relacional, y autorizacion generando un Token con Json Wen Token, ademas de encriptar las contraseñas"
+              ghLink="https://github.com/diazarm/film_management"
             />
           </Col>
         </Row>
