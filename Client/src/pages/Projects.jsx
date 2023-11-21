@@ -2,12 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "../components/Projects/ProjectCard";
 import Particle from "../components/Particle";
-import eCalendary from "../assets/projects/eCalendary.jpg";
-import dogs from "../assets/projects/dogs-capture.jpg";
-import rick from "../assets/projects/rick.jpg";
-import aprende from "../assets/projects/aprende.jpg";
-import country from "../assets/projects/country.png";
-import film from "../assets/projects/film.jpg";
+import eCalendary from "../assets/projects/eCalendary.svg";
+import dogs from "../assets/projects/dogs-capture.svg";
+import rick from "../assets/projects/rick.svg";
+import aprende from "../assets/projects/aprende.svg";
+import country from "../assets/projects/country.svg";
+import film from "../assets/projects/film.svg";
 
 const Projects = () => {
   return (
